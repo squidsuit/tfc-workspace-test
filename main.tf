@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 variable "environment" {
-   type = "string"
+   type = string
    description = "dev or prod"
    default = "dev" 
 }
