@@ -19,11 +19,11 @@ variable "environment" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "squidsuit-test-${var.env}"
+  bucket = "squidsuit-test-${var.environment}"
   acl    = "private"
 
   tags = {
     Name        = "My bucket"
-    Environment = "${var.env}"
+    Environment = "${var.environment}"
   }
 }
