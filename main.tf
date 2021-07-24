@@ -15,7 +15,6 @@ provider "aws" {
 variable "environment" {
    type = string
    description = "dev or prod"
-   default = "dev" 
 }
 
 resource "aws_s3_bucket" "b" {
